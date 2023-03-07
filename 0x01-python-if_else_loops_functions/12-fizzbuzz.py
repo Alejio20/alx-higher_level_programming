@@ -2,7 +2,7 @@
 def fizzbuzz():
     for i in range(1, 101):
         if i == 100:
-            print("Buzz")
+            print("Buzz", end='')
             break
         elif i % 15 == 0:
             i = "FizzBuzz"
@@ -11,4 +11,3 @@ def fizzbuzz():
         elif i % 5 == 0:
             i = "Buzz"
         print("{} ".format(i), end='')
-
