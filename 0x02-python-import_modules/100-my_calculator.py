@@ -9,26 +9,26 @@ if __name__ == "__main__":
 
     count = len(sys.argv) - 1
 
-    if count < 3:
+    if count != 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
-        exit(1)
-    elif count = 3:
+        sys.exit(1)
+    else:
         a = sys.argv[1]
         operator = sys.argv[2]
         b = sys.argv[3]
 
         if operator == "+":
             print("{:d} + {:d} = {:d}".format(a, b, int(add(a, b))))
-            exit(0)
+            sys.exit(0)
         elif operator == "-":
             print("{:d} - {:d} = {:d}".format(a, b, int(sub(a, b))))
-            exit(0)
+            sys.exit(0)
         elif operator == "*":
             print("{:d} * {:d} = {:d}".format(a, b, int(mul(a, b))))
-            exit(0)
+            sys.exit(0)
         elif operator == "/":
             print("{:d} / {:d} = {:d}".format(a, b, int(div(a, b))))
-            exit(0)
+            sys.exit(0)
         else:
             print("Unknown operator. Available operators: +, -, * and /")
-            exit(1)
+            sys.exit(1)
