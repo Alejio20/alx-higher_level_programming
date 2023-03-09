@@ -18,16 +18,16 @@ if __name__ == "__main__":
         b = sys.argv[3]
 
         if operator == "+":
-            print("{:d} + {:d} = {:d}".format(a, b, int(add(a, b))))
+            print("{} + {} = {}".format(a, b, int(add(a, b))))
             sys.exit(0)
         elif operator == "-":
-            print("{:d} - {:d} = {:d}".format(a, b, int(sub(a, b))))
+            print("{} - {} = {}".format(a, b, int(sub(a, b))))
             sys.exit(0)
         elif operator == "*":
-            print("{:d} * {:d} = {:d}".format(a, b, int(mul(a, b))))
+            print("{} * {} = {}".format(a, b, int(mul(a, b))))
             sys.exit(0)
         elif operator == "/":
-            print("{:d} / {:d} = {:d}".format(a, b, int(div(a, b))))
+            print("{} / {} = {}".format(a, b, int(div(a, b))))
             sys.exit(0)
         else:
             print("Unknown operator. Available operators: +, -, * and /")
