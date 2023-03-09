@@ -8,8 +8,8 @@ if __name__ == "__main__":
     elif len(arg) == 2:
         print('1 argument:')
     elif len(arg) > 2:
-        print('{:d} arguments:'.format(len(arg)))
+        print('{} arguments:'.format(len(arg)))
     i = 1
     for n in arg:
-        print('{:d}: {:s}'.format(i, arg[i]))
+        print('{}: {}'.format(i, sys.argv[i]))
         i += 1
