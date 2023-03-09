@@ -19,16 +19,12 @@ if __name__ == "__main__":
 
         if operator == "+":
             print("{} + {} = {}".format(a, b, int(add(a, b))))
-            sys.exit(0)
         elif operator == "-":
             print("{} - {} = {}".format(a, b, int(sub(a, b))))
-            sys.exit(0)
         elif operator == "*":
             print("{} * {} = {}".format(a, b, int(mul(a, b))))
-            sys.exit(0)
         elif operator == "/":
             print("{} / {} = {}".format(a, b, int(div(a, b))))
-            sys.exit(0)
         else:
             print("Unknown operator. Available operators: +, -, * and /")
             sys.exit(1)
