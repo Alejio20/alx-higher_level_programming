@@ -2,6 +2,8 @@
 """
 This module has only the add_integer method
 """
+
+
 def add_integer(a, b=98):
     """
     Returns an integer of the addition of a and b which can be int or float
