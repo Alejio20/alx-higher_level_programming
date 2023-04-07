@@ -8,15 +8,17 @@ def matrix_divided(matrix, div):
     """
     This function divides all elements of a matrix by a given number
 
-    raise:
+    Raise:
         TypeError: If the matrix contains non-numbers\n
         TypeError: If the matrix contains rows of different sizes\n
         TypeError: If div is not an int or float\n
         ZeroDivisionError: If div is 0
 
-    :param matrix: A list of lists (matrix)- members can be of type ints or floats
-    :param div: Number to be used for the division (can be a float or an integer)
-    :return: A new matrix which represents the result of the divisions
+    Arguments:
+        matrix: A list of lists (matrix)- members can be of type ints or floats
+        div: Number to be used for the division (can be a float or an integer)
+    
+    Return: A new matrix which represents the result of the divisions
     """
 
     if matrix is [[]]: # check if matrix is a list of lists
