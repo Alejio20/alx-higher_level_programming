@@ -28,19 +28,19 @@ def matrix_divided(matrix, div):
     if matrix:  # check for the length of first list in the matrix
         matrix_len = len(matrix[0])
 
-    if not (isinstance(div, int) or isinstance(div, float)): # div must be integer or float
+    if not (isinstance(div, int) or isinstance(div, float)):
         raise TypeError("div must be a number")
 
     if div == 0:
         raise ZeroDivisionError("division by zero")
 
-    new_matrix = [] # create a new list
+    new_matrix = []  # create a new list
     for i in range(len(matrix)):
-        if len(matrix[i]) != matrix_len: # Check for equal size of lists in  matrix
+        if len(matrix[i]) != matrix_len:
             raise TypeError("Each row of the matrix must have the same size")
-        new_matrix.append([]) # make a list of list
+        new_matrix.append([])  # make a list of list
         for j in matrix[i]:
-            if type(j) is int or type(j) is float: # check that matrix element is a number
+            if type(j) is int or type(j) is float:
                 new_matrix[i].append(round((j / div), 2))
             else:
                 raise TypeError(err)
