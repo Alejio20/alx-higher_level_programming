@@ -17,7 +17,7 @@ def matrix_divided(matrix, div):
     Arguments:
         matrix: A list of lists (matrix)- members can be of type ints or floats
         div: Number to be used for the division (can be a float or an integer)
-    
+
     Return: A new matrix which represents the result of the divisions
     """
 
