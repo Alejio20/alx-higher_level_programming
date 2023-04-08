@@ -9,9 +9,9 @@ def matrix_divided(matrix, div):
     This function divides all elements of a matrix by a given number
 
     Raise:
-        TypeError: If the matrix contains non-numbers\n
-        TypeError: If the matrix contains rows of different sizes\n
-        TypeError: If div is not an int or float\n
+        TypeError: If the matrix contains non-numbers
+        TypeError: If the matrix contains rows of different sizes
+        TypeError: If div is not an int or float
         ZeroDivisionError: If div is 0
 
     Arguments:
