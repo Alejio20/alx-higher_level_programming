@@ -9,14 +9,14 @@ def matrix_divided(matrix, div):
     This function divides all elements of a matrix by a given number
 
     Raise:
-        TypeError: If the matrix contains non-numbers
-        TypeError: If the matrix contains rows of different sizes
-        TypeError: If div is not an int or float
-        ZeroDivisionError: If div is 0
+    TypeError: If the matrix contains non-numbers
+    TypeError: If the matrix contains rows of different sizes
+    TypeError: If div is not an int or float
+    ZeroDivisionError: If div is 0
 
     Arguments:
-        matrix: A list of lists (matrix)- members can be of type ints or floats
-        div: Number to be used for the division (can be a float or an integer)
+    matrix: A list of lists (matrix)- members can be of type ints or floats
+    div: Number to be used for the division (can be a float or an integer)
 
     Return: A new matrix which represents the result of the divisions
     """
