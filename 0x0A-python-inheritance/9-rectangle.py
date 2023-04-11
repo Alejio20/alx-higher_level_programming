@@ -20,4 +20,8 @@ class Rectangle(BaseGeometry):
         return (self.__width * self.__height)
 
     def __str__(self):
-        return "[{}] {}/{}".format(type(self).__name__, self.__width, self.__height)
+        """Returns the print() and str() methos representation"""
+
+        msg1 = f"[{type(self).__name__}] "
+        msg2 = f"{self.__width}/{self.__height}"
+        return (msg1 + msg2)
