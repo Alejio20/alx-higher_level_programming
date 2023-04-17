@@ -2,6 +2,7 @@
 """Rectangle class inherits from Base class"""
 from models.base import Base
 
+
 class Rectangle(Base):
     """Rectangle class definition"""
 
@@ -83,7 +84,7 @@ class Rectangle(Base):
     def __str__(self):
         """print() & str() representation of Rectangle"""
 
-        return f"[{type(self).__name__}] ({self.id})" \
+        return f"[{type(self).__name__}] ({self.id})"\
                f" {self.x}/{self.y} - {self.width}/{self.height}"
 
     def update(self, *args, **kwargs):
