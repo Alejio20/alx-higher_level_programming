@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""Base module for all other classes"""
 import json
 import csv
 import turtle
+"""Base module for all other classes"""
 
 
 class Base:
