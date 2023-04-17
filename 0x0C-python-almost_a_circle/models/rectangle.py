@@ -85,7 +85,8 @@ class Rectangle(Base):
         """print() & str() representation of Rectangle"""
 
         return f"[{type(self).__name__}] ({self.id})"\
-               f" {self.x}/{self.y} - {self.width}/{self.height}"
+               f" {self.x}/{self.y}"\
+               f"- {self.width}/{self.height}"
 
     def update(self, *args, **kwargs):
         """assigns an argument to each attribute:
@@ -137,7 +138,8 @@ class Rectangle(Base):
                             self.x, self.y, self.id)
 
     def to_dictionary(self):
-        """returns the dictionary representation of a Rectangle"""
+        """returns the dictionary
+        representation of a Rectangle"""
 
         my_dict = {
             "id": self.id,
