@@ -1,8 +1,8 @@
 #!/usr/bin/python3
+"""Base module for all other classes"""
 import json
 import csv
 import turtle
-"""Base module for all other classes"""
 
 
 class Base:
@@ -61,7 +61,6 @@ class Base:
             dummy = cls(1, 1)
         elif cls.__name__ == "Square":
             dummy = cls(1)
-
         dummy.update(**dictionary)
         return dummy
 
@@ -118,6 +117,7 @@ class Base:
             list_squares (list): A list of Square
             objects to draw.
         """
+
         turt = turtle.Turtle()
         turt.screen.bgcolor("#000000")
         turt.pensize(3)
